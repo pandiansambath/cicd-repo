@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.8-slim
 WORKDIR /app
 COPY . .
-CMD ["python", "app.py"]
+CMD ["sh", "-c", "python app.py && python car.py && exec bash"]
