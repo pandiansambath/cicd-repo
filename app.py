@@ -1,6 +1,8 @@
-list=['apple','mango','banana']
-for i in range(30):
-    for i in list:
-        print(f"\n{i}")
-        
-print("Yes pipeline is triggered")
+a=10
+print(a)
+b=20
+print(20)
+c=30
+print(c)
+d=40
+print(d)

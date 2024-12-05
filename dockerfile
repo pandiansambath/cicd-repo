@@ -1,4 +1,5 @@
 FROM python:3.8-slim
-WORKDIR /app
+WORKDIR /docdir
 COPY . .
-CMD ["sh", "-c", "python app.py && python car.py && exec bash"]
+RUN pip install pytest
+CMD ["python", "calc.py"]
